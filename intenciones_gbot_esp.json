@@ -1,0 +1,249 @@
+    {
+        "intenciones": [
+        {
+            "etiqueta": "TotaldeEstudiantes",
+            "patrones": ["{\"Total\": 1024}"],
+            "respuestas": ["El total de estudiantes registrados es de 1024", "Se puede observar un total de 1024 estudiantes", "Encontramos que hay 1024 en total"]
+        },
+        { 
+            "etiqueta": "Genero",
+            "patrones": ["[{\"Genero\": \"Femenino\", \"cantidad\": 517}, {\"Genero\": \"Masculino\", \"cantidad\": 507}]"],
+            "respuestas": ["Se tiene en cuenta que de 1024 alumnos matriculados, 517 de ellos son mujeres y 507 son hombres.","De acuerdo al registro de la universidad, de los 1024 estudiantes inscritos, 517 son mujeres y 507 son hombres","Se tiene en cuenta que de 1024 estudiantes matriculados, 517 de ellos son mujeres y 507 son hombres"]
+        },
+        {
+            "etiqueta": "NotaPromedio",
+            "patrones": ["{\"promedio\": 17}"],
+            "respuestas": ["La nota promedio de los estudiantes es de 17","La nota promedio es de 17","Se observa que la nota promedio es de 17"]
+        },
+        {
+            "etiqueta": "PromedioSatisfactorio",
+            "patrones": ["{\"promedioSatisfactorio\": 774, \"promedioRegular\": 250}"],
+            "respuestas": ["De los 1024 estudiantes 774 tienen un promedio satisfactoio y 250 estudiantes tienen un promedio regular","Esto sugiere que el 75.59% de los estudiantes tienen un promedio satisfactorio, mientras que el 24.41% tiene un promedio regular.","Los datos sugieren que la mayoría de los estudiantes (774 de 1024, es decir, aproximadamente el 75.59%) tienen un rendimiento académico que se considera satisfactorio"]
+        },
+        {
+            "etiqueta": "CursoPromedio",
+            "patrones": ["[{\"curso_NombreCurso\": \"FUNDAMENTOS DE PROGRAMACIÓN\", \"promedio\": 16}, {\"curso_NombreCurso\": \"MATEMÁTICA I\", \"promedio\": 16}, {\"curso_NombreCurso\": \"PENSAMIENTO LÓGICO\", \"promedio\": 16}]"],
+            "respuestas": ["Los cursos con menor promedio entre los estudiantes del primer ciclo son, Fundamentos de Programación, Matematica I y Pensamiento Logico","Los cursos en los que los estudiantes de primer ciclo tienen las calificaciones más bajas son Fundamentos de Programación, Matemática I y Pensamiento Lógico."]
+        },
+        {
+            "etiqueta": "TasaRiesgo",
+            "patrones": ["{\"cantidad\": 5088, \"porcentaje\": \"9.2\"}"],
+            "respuestas": ["De todas las notas registradas por los estudiantes, las notas no satisfactoria representan a un 9.2%","De todas las calificaciones registradas por los estudiantes, 5088 representa el 9.2%, la cuales no satisfactorias.","5088 de las calificaciones registradas por los estudiantes, el 9.2%, se clasifican como no satisfactorias."]
+        },
+        {
+            "etiqueta": "TasaBeneficio",
+            "patrones": ["{\"cantidad\": 24905, \"porcentaje\": \"45.0\"}"],
+            "respuestas": ["De todas las calificaciones registradas por los estudiantes, 24905 (lo que corresponde al 45.0%) se clasifican como notas satisfactorias","Entre todas las calificaciones registradas por los estudiantes, 24905, que constituyen el 45.0%, alcanzan un nivel satisfactorio","Entre todas las calificaciones registradas por los estudiantes, 24905, que constituyen el 45.0%, cumplen con el nivel satisfactorio"]
+        },
+        {
+            "etiqueta": "Estadocivil",
+            "patrones": ["{\"Total\":1024,\"casados\":505,\"solteros\":519,\"viudos\":0}"],
+            "respuestas": ["De un total de 1024 estudiantes registrados, 505 están casados, 519 son solteros y no hay ningún estudiante viudo.","Entre los 1024 estudiantes registrados, 505 están casados, 519 son solteros, y no hay estudiantes viudos.","En el grupo de 1024 estudiantes registrados, 505 están casados, 519 son solteros, y ninguno se encuentra viudo"]
+        },
+        {
+            "etiqueta": "Turno",
+            "patrones": ["[{\"Turno\":\"Tarde\",\"cantidadEstudiantes\":992},{\"Turno\":\"Noche\",\"cantidadEstudiantes\":992},{\"Turno\":\"Mañana\",\"cantidadEstudiantes\":938}]"],
+            "respuestas": ["La universidad ofrece clases en tres turnos diferentes. En el turno de Tarde, hay 992 estudiantes inscritos. En el turno de Noche, también hay 992 estudiantes inscritos. En el turno de Mañana, hay 938 estudiantes inscritos","La universidad tiene tres horarios de clases disponibles. Tanto en el turno de Tarde como en el turno de Noche hay 992 estudiantes cada uno, mientras que en el turno de Mañana hay 938 estudiantes matriculados","La universidad ofrece clases en tres horarios distintos.El turno de Tarde y el turno de Noche tienen la misma cantidad de estudiantes inscritos, con un total de 992 en cada uno, mientras que en el turno de Mañana hay 938 estudiantes"]
+        },
+        {
+            "etiqueta": "Distrito",
+            "patrones": ["[{\"descripcionD\":\"Los Olivos\",\"cantidad\":90},{\"descripcionD\":\"San Martín de Porres\",\"cantidad\":89},{\"descripcionD\":\"Independencia\",\"cantidad\":77},{\"descripcionD\":\"Carabayllo\",\"cantidad\":74},{\"descripcionD\":\"Comas\",\"cantidad\":61},{\"descripcionD\":\"Puente Piedra\",\"cantidad\":58},{\"descripcionD\":\"Ancón\",\"cantidad\":47},{\"descripcionD\":\"Cercado de Lima\",\"cantidad\":32},{\"descripcionD\":\"Ate\",\"cantidad\":32},{\"descripcionD\":\"Chorrillos\",\"cantidad\":31}]"],
+            "respuestas": ["De los estudiantes matriculados, se observa que residen principalmente en Los Olivos, donde hay 90 estudiantes, seguido por San Martín de Porres con 89. Independencia alberga a 77 estudiantes, Carabayllo a 74, Comas a 61, y Puente Piedra a 58. En Ancón hay 47 estudiantes, mientras que tanto Cercado de Lima como Ate tienen 32 cada uno. Finalmente, Chorrillos es el distrito con menos estudiantes, con un total de 31.","Entre los estudiantes matriculados, se destaca que la mayoría proviene de Los Olivos, con 90 estudiantes, seguido de San Martín de Porres con 89. Independencia alberga a 77 estudiantes, Carabayllo a 74, Comas a 61, y Puente Piedra a 58. Por otro lado, Ancón cuenta con 47 estudiantes, mientras que tanto Cercado de Lima como Ate tienen 32 cada uno. Chorrillos es el distrito con la menor cantidad de estudiantes, con un total de 31.","De acuerdo con los registros de matrícula, se observa que la mayoría de los estudiantes provienen de Los Olivos, con un total de 90. Le sigue San Martín de Porres con 89 estudiantes, Independencia con 77, Carabayllo con 74, Comas con 61, y Puente Piedra con 58. Ancón cuenta con 47 estudiantes, mientras que tanto Cercado de Lima como Ate tienen 32 cada uno. En comparación, Chorrillos tiene la menor cantidad de estudiantes, con un total de 31."]
+        },
+        
+        {
+            "etiqueta": "Cono",
+            "patrones": ["{\"total_estudiantes\":510}"],
+            "respuestas": ["En el cono Nore se encuentran un total de 510 estudiantes registrados","En la zona norte se han registrado un total de 510 estudiantes","Un total de 510 estudiantes están inscritos en la zona norte."]
+        },
+
+        {
+            "etiqueta": "NotasCurso",
+            "patrones": ["[{\"NombreCurso\":\"COMPETENCIA COMUNICATIVA\",\"TotalNota\":9216,\"NotasMenor14\":257,\"PorcentajeNotasMenor14\":2.79,\"NotasMayor16\":5302,\"PorcentajeNotasMayor16\":57.53},{\"NombreCurso\":\"FUNDAMENTOS DE PROGRAMACIÓN\",\"TotalNota\":9216,\"NotasMenor14\":1568,\"PorcentajeNotasMenor14\":17.01,\"NotasMayor16\":4859,\"PorcentajeNotasMayor16\":52.72},{\"NombreCurso\":\"INTRODUCCIÓN A LA INGENIERÍA DE SISTEMAS\",\"TotalNota\":9216,\"NotasMenor14\":0,\"PorcentajeNotasMenor14\":0,\"NotasMayor16\":5847,\"PorcentajeNotasMayor16\":63.44},{\"NombreCurso\":\"MATEMÁTICA I\",\"TotalNota\":9216,\"NotasMenor14\":1608,\"PorcentajeNotasMenor14\":17.45,\"NotasMayor16\":5219,\"PorcentajeNotasMayor16\":56.63},{\"NombreCurso\":\"PENSAMIENTO LÓGICO\",\"TotalNota\":9216,\"NotasMenor14\":1531,\"PorcentajeNotasMenor14\":16.61,\"NotasMayor16\":4925,\"PorcentajeNotasMayor16\":53.44},{\"NombreCurso\":\"TUTORIA I: COHESIÓN Y AUTOEFICACIA\",\"TotalNota\":9216,\"NotasMenor14\":124,\"PorcentajeNotasMenor14\":1.35,\"NotasMayor16\":7827,\"PorcentajeNotasMayor16\":84.93}]"],
+            "respuestas": ["Los datos revelan el rendimiento académico en varios cursos: En Competencia Comunicativa, se registraron un total de 9216 notas, con un 2.79% (257 notas) siendo menores a 14, y un 57.53% (5302 notas) iguales o mayores a 16. En Fundamentos de Programación, de las 9216 notas, el 17.01% (1568 notas) fueron menores a 14, y el 52.72% (4859 notas) iguales o mayores a 16. En Introducción a la Ingeniería de Sistemas, todas las 9216 notas fueron iguales o mayores a 16, representando un 63.44% (5847 notas). En Matemática I, el 17.45% (1608 notas) fueron menores a 14, y el 56.63% (5219 notas) iguales o mayores a 16 de las 9216 notas. Pensamiento Lógico mostró un 16.61% (1531 notas) menores a 14, y un 53.44% (4925 notas) iguales o mayores a 16. Finalmente, en Tutoría I: Cohesión y Autoeficacia, el 1.35% (124 notas) fueron menores a 14, y un destacado 84.93% (7827 notas) iguales o mayores a 16 de las 9216 notas totales.","Los datos muestran el desempeño académico en varios cursos: Competencia Comunicativa cuenta con un total de 9216 notas, donde el 2.79% (257 notas) son menores a 14, mientras que el 57.53% (5302 notas) son iguales o mayores a 16. En Fundamentos de Programación, de las 9216 notas registradas, el 17.01% (1568 notas) están por debajo de 14, y el 52.72% (4859 notas) alcanzan o superan 16. En Introducción a la Ingeniería de Sistemas, todas las 9216 notas cumplen o superan 16, representando el 63.44% (5847 notas). Matemática I muestra que el 17.45% (1608 notas) son menores de 14, mientras que el 56.63% (5219 notas) alcanzan o superan 16. Pensamiento Lógico tiene el 16.61% (1531 notas) menores de 14, y el 53.44% (4925 notas) alcanzan o superan 16. Finalmente, en Tutoría I: Cohesión y Autoeficacia, el 1.35% (124 notas) son menores de 14, y un destacado 84.93% (7827 notas) alcanzan o superan 16 de las 9216 notas totales.","Los datos revelan el rendimiento académico en varios cursos: En Competencia Comunicativa, se han registrado un total de 9216 notas. De estas, el 2.79% (257 notas) obtuvieron calificaciones menores a 14, mientras que el 57.53% (5302 notas) alcanzaron o superaron los 16 puntos. En Fundamentos de Programación, de las 9216 notas registradas, el 17.01% (1568 notas) recibieron calificaciones menores a 14, y el 52.72% (4859 notas) alcanzaron o superaron los 16 puntos. En Introducción a la Ingeniería de Sistemas, todas las 9216 notas lograron calificaciones iguales o superiores a 16, representando el 63.44% (5847 notas). En Matemática I, el 17.45% (1608 notas) obtuvieron calificaciones menores a 14, y el 56.63% (5219 notas) alcanzaron o superaron los 16 puntos. Pensamiento Lógico mostró que el 16.61% (1531 notas) obtuvieron calificaciones menores a 14, y el 53.44% (4925 notas) alcanzaron o superaron los 16 puntos. Finalmente, en Tutoría I: Cohesión y Autoeficacia, el 1.35% (124 notas) recibieron calificaciones menores a 14, y un destacado 84.93% (7827 notas) alcanzaron o superaron los 16 puntos de las 9216 notas totales."]
+        },
+        {
+            "etiqueta": "PromedioGenero",
+            "patrones": ["[{\"Genero\":\"Femenino\",\"cantidad_con_promedio_mayor_a_16\":136,\"Total\":517},{\"Genero\":\"Masculino\",\"cantidad_con_promedio_mayor_a_16\":114,\"Total\":507}]"],
+            "respuestas": ["Los datos muestran el desempeño académico según el género de los estudiantes. En el grupo femenino, hay un total de 517 estudiantes, de los cuales 136 tienen un promedio mayor a 16. En el grupo masculino, el total es de 507 estudiantes, de los cuales 114 tienen un promedio mayor a 16","Se presentan datos sobre el rendimiento académico según el género de los estudiantes: En el grupo femenino, un total de 517 estudiantes fueron registrados, de los cuales 136 tienen un promedio mayor a 16. En el grupo masculino, se registraron 507 estudiantes, con 114 de ellos alcanzando un promedio mayor a 16.","Los datos muestran el desempeño académico por género de los estudiantes: En el grupo femenino, hay un total de 517 estudiantes, de los cuales 136 tienen un promedio mayor a 16. Mientras tanto, en el grupo masculino, se registran 507 estudiantes, de los cuales 114 han obtenido un promedio mayor a 16."]
+        },
+        {
+            "etiqueta": "EstudianteCategoria",
+            "patrones": ["[{\"Categoria\":\"Normal\",\"cantidad_estudiantes\":258,\"porcentaje\":25.2},{\"Categoria\":\"Primeros puestos\",\"cantidad_estudiantes\":256,\"porcentaje\":25},{\"Categoria\":\"Alfa\",\"cantidad_estudiantes\":252,\"porcentaje\":24.61},{\"Categoria\":\"Alumnos Especiales\",\"cantidad_estudiantes\":258,\"porcentaje\":25.2}]"],
+            "respuestas": ["Se presenta la cantidad de estudiantes distribuidos en diferentes categorías: En la categoría 'Normal', hay 258 estudiantes, lo que representa un 25.2% del total. En la categoría de 'Primeros puestos', se encuentran 256 estudiantes, equivalente al 25% del total. La categoría 'Alfa' cuenta con 252 estudiantes, que corresponde al 24.61% del total. Finalmente, los 'Alumnos Especiales' suman 258 estudiantes, también representando un 25.2% del total.","Se detalla la distribución de estudiantes según categorías específicas: La categoría 'Normal' cuenta con 258 estudiantes, representando el 25.2% del total. En la categoría de 'Primeros puestos', hay 256 estudiantes, equivalente al 25% del total. Por otro lado, la categoría 'Alfa' registra 252 estudiantes, lo que corresponde al 24.61% del total. Además, los 'Alumnos Especiales' suman 258 estudiantes, también representando el 25.2% del total de estudiantes.","Los datos muestran la distribución de estudiantes en distintas categorías: En la categoría 'Normal', hay 258 estudiantes, lo que equivale al 25.2% del total. La categoría 'Primeros puestos' cuenta con 256 estudiantes, representando el 25% del total. Por su parte, la categoría 'Alfa' tiene 252 estudiantes, lo que corresponde al 24.61% del total. Finalmente, en la categoría de 'Alumnos Especiales', se registran 258 estudiantes, también representando el 25.2% del total."]
+        },
+        {
+            "etiqueta": "cc-PromGene",
+            "patrones": ["{\"Genero\":\"Femenino\",\"promedio\":17,\"porcentaje\":85}", "{\"Genero\":\"Masculino\",\"promedio\":17,\"porcentaje\":85}"],
+            "respuestas":["En el curso \"Competencia Comunicativa\", se observa que tanto las estudiantes mujeres como los estudiantes hombres tienen un promedio de calificaciones de 17. Esto representa un alto porcentaje de 85% en ambos géneros, indicando un rendimiento consistente y destacado en la competencia comunicativa dentro del curso."]
+        },
+        {
+            "etiqueta": "cc-PromTur",
+            "patrones": ["[{\"Turno\":\"Tarde\",\"Promedio\":17},{\"Turno\":\"Noche\",\"Promedio\":17},{\"Turno\":\"Mañana\",\"Promedio\":17}]"],
+            "respuestas":["En el curso \"Competencia Comunicativa\" se evidencia que en todos los turnos - Tarde, Noche y Mañana - los estudiantes tienen un promedio de calificaciones de 17. Esto refleja un nivel uniforme y consistente de rendimiento académico en todas las sesiones del curso."]
+        },
+        {
+            "etiqueta": "cc-NotasUnidades",
+            "patrones": ["[{\"idUnidad\":\"U3\",\"TotalNotas\":3072,\"NotasM\":1315,\"Porcentaje\":42.81},{\"idUnidad\":\"U2\",\"TotalNotas\":3072,\"NotasM\":1295,\"Porcentaje\":42.15},{\"idUnidad\":\"U1\",\"TotalNotas\":3072,\"NotasM\":1304,\"Porcentaje\":42.45}]"],
+            "respuestas":["En el curso \"Competencia Comunicativa\", se encontraron resultados consistentes en las tres unidades evaluadas. En la Unidad U3, de un total de 3072 notas, el 42.81% fueron satisfactorias con 1315 notas satisfactorias. La Unidad U2 mostró un 42.15% de notas satisfactorias con 1295 de 3072 notas. Por último, en la Unidad U1, se registraron 1304 notas satisfactorias, representando un 42.45% del total de 3072 notas evaluadas"]
+        },
+        {
+            "etiqueta": "cc-NotasEstu",
+            "patrones": ["[{\"NombreCompleto\":\"Hernandez Jorge\",\"Total\":144,\"NotasM\":74,\"Porcentaje\":51.39},{\"NombreCompleto\":\"López Fernanda\",\"Total\":288,\"NotasM\":147,\"Porcentaje\":51.04},{\"NombreCompleto\":\"Rodriguez Sofia\",\"Total\":144,\"NotasM\":72,\"Porcentaje\":50},{\"NombreCompleto\":\"Pérez Andrés\",\"Total\":648,\"NotasM\":320,\"Porcentaje\":49.38},{\"NombreCompleto\":\"Rojas Carolina\",\"Total\":144,\"NotasM\":70,\"Porcentaje\":48.61},{\"NombreCompleto\":\"Diaz Luis\",\"Total\":216,\"NotasM\":104,\"Porcentaje\":48.15}]"],
+            "respuestas":["n el curso \"Competencia Comunicativa\", se observa el rendimiento académico de varios estudiantes. Hernández Jorge obtuvo un total de 144 notas, con 74 notas satisfactorias, lo que representa un porcentaje del 51.39%. López Fernanda recibió un total de 288 notas, con 147 notas satisfactorias, alcanzando un porcentaje del 51.04%. Rodríguez Sofía obtuvo un total de 144 notas, con 72 notas satisfactorias, equivalente al 50%. Pérez Andrés recibió 648 notas en total, con 320 notas satisfactorias, representando un porcentaje del 49.38%. Rojas Carolina recibió 144 notas en total, con 70 notas satisfactorias, alcanzando un porcentaje del 48.61%. Finalmente, Díaz Luis recibió 216 notas en total, con 104 notas satisfactorias, lo que equivale al 48.15% en el curso \"Competencia Comunicativa\". Estos datos reflejan una variedad de desempeños en la competencia comunicativa entre los estudiantes evaluados."]
+        },
+        {
+            "etiqueta": "cc-TipoNota",
+            "patrones": ["[{\"idTipo\":\"EP\",\"cantidad\":2048,\"NotasSatis\":863,\"PorcentajeS\":42.14,\"NotasInSatis\":1185,\"PorcentajeI\":57.86},{\"idTipo\":\"PC\",\"cantidad\":3072,\"NotasSatis\":1326,\"PorcentajeS\":43.16,\"NotasInSatis\":1746,\"PorcentajeI\":56.84},{\"idTipo\":\"EF\",\"cantidad\":1024,\"NotasSatis\":424,\"PorcentajeS\":41.41,\"NotasInSatis\":600,\"PorcentajeI\":58.59},{\"idTipo\":\"IF\",\"cantidad\":3072,\"NotasSatis\":1301,\"PorcentajeS\":42.35,\"NotasInSatis\":1771,\"PorcentajeI\":57.65}]"],
+            "respuestas":["Las Evaluaciones Parciales (EP) registraron un total de 2048 evaluaciones, con 863 notas satisfactorias, lo que equivale a un 42.14% de éxito. Las Pruebas Completas (PC) contaron con 3072 evaluaciones, de las cuales 1326 fueron satisfactorias, alcanzando un 43.16% de éxito. Las Evaluaciones Finales (EF), por otro lado, tuvieron 1024 evaluaciones, con 424 satisfactorias, lo que representa un 41.41% de éxito. En cuanto a las Evaluaciones Intermedias (IF), se realizaron 3072 evaluaciones, con 1301 satisfactorias, logrando un 42.35% de éxito. Estos datos proporcionan una visión detallada del rendimiento en diferentes tipos de evaluaciones dentro del curso \"Competencia Comunicativa\"."]
+        },
+        {
+            "etiqueta": "cc-NotasAño",
+            "patrones": ["[{\"year\":2010,\"cantidad\":576,\"Notas\":392,\"Porcentaje\":68.06},{\"year\":2021,\"cantidad\":576,\"Notas\":328,\"Porcentaje\":56.94},{\"year\":2022,\"cantidad\":864,\"Notas\":466,\"Porcentaje\":53.94},{\"year\":2011,\"cantidad\":576,\"Notas\":355,\"Porcentaje\":61.63},{\"year\":2023,\"cantidad\":864,\"Notas\":489,\"Porcentaje\":56.6},{\"year\":2009,\"cantidad\":576,\"Notas\":379,\"Porcentaje\":65.8}]"],
+            "respuestas":["En el año 2010, se registraron 576 evaluaciones, con 392 notas satisfactorias, lo que representa un impresionante 68.06% de éxito académico. En 2021, nuevamente con 576 evaluaciones, se obtuvieron 328 notas satisfactorias, alcanzando un 56.94% de éxito. En 2022, con un total de 864 evaluaciones, se registraron 466 notas satisfactorias, lo que equivale a un 53.94% de éxito. En el año 2011, se realizaron 576 evaluaciones, obteniendo 355 notas satisfactorias, con un porcentaje del 61.63% de éxito. En 2023, con 864 evaluaciones, se obtuvieron 489 notas satisfactorias, alcanzando un 56.6% de éxito. Finalmente, en 2009, se registraron 576 evaluaciones, con 379 notas satisfactorias, representando un 65.8% de éxito. Estos datos ofrecen una perspectiva detallada del rendimiento académico a lo largo de los años en el curso \"Competencia Comunicativa\""]
+        },
+        {
+            "etiqueta": "cc-Promedio",
+            "patrones": ["{\"promedio\":17}"],
+            "respuestas":["En el curso \"Competencia Comunicativa\", el promedio de calificaciones de los estudiantes es de 17."]
+        },
+        {
+            "etiqueta": "cc-CompetenciaPro",
+            "patrones": ["{\"cantidadP\":30}"],
+            "respuestas":["En el curso \"Competencia Comunicativa\", participan un total de 30 profesores."]
+        },
+        {
+            "etiqueta": "cc-NotasReg",
+            "patrones": ["{\"cantidadN\":9216}"],
+            "respuestas":["Se han registrado un total de 9216 notas en el curso."]
+        },
+        
+        {
+            "etiqueta": "fp-PromGene",
+            "patrones": ["[{\"Genero\":\"Femenino\",\"promedio\":16,\"porcentaje\":80},{\"Genero\":\"Masculino\",\"promedio\":16,\"porcentaje\":80}]"],
+            "respuestas":["El promedio de nota se observa que tanto las estudiantes mujeres como los estudiantes hombres tienen un promedio de calificaciones de 16, representando un alto porcentaje del 80% en términos de rendimiento académico. Esto indica un desempeño equilibrado y destacado entre ambos géneros en el curso \"Fundamentos de Programación\"."]
+        },
+        {
+            "etiqueta": "fp-PromTur",
+            "patrones": ["[{\"Turno\":\"Tarde\",\"Promedio\":16},{\"Turno\":\"Noche\",\"Promedio\":16},{\"Turno\":\"Mañana\",\"Promedio\":16}]"],
+            "respuestas":["En el curso \"Fundamentos de Programación\", se evidencia que en todos los turnos - Tarde, Noche y Mañana - los estudiantes tienen un promedio de calificaciones de 16. Esto refleja un rendimiento académico uniforme y consistente en todas las sesiones del curso \"Fundamentos de Programación\"."]
+        },
+        {
+            "etiqueta": "fp-NotasUnidades",
+            "patrones": ["[{\"idUnidad\":\"U3\",\"TotalNotas\":3072,\"NotasM\":1486,\"Porcentaje\":48.37},{\"idUnidad\":\"U2\",\"TotalNotas\":3072,\"NotasM\":1418,\"Porcentaje\":46.16},{\"idUnidad\":\"U1\",\"TotalNotas\":3072,\"NotasM\":1453,\"Porcentaje\":47.3}]"],
+            "respuestas":["En la Unidad 3, de un total de 3072 notas, 1486 fueron satisfactorias, lo que representa un 48.37%. En la Unidad 2, también con 3072 notas, se obtuvieron 1418 notas satisfactorias, alcanzando un 46.16%. Por último, en la Unidad 1, de las 3072 notas evaluadas, 1453 fueron satisfactorias, lo que equivale a un 47.3%. Estos datos reflejan un desempeño académico relativamente equilibrado entre las distintas unidades del curso \"Fundamentos de Programación\""]
+        },
+        {
+            "etiqueta": "fp-NotasEstu",
+            "patrones": ["[{\"NombreCompleto\":\"Martínez Juan\",\"Total\":144,\"NotasM\":90,\"Porcentaje\":62.5},{\"NombreCompleto\":\"López Carlos\",\"Total\":45,\"NotasM\":27,\"Porcentaje\":60},{\"NombreCompleto\":\"Herrera Camila\",\"Total\":144,\"NotasM\":85,\"Porcentaje\":59.03},{\"NombreCompleto\":\"López Fernanda\",\"Total\":144,\"NotasM\":82,\"Porcentaje\":56.94},{\"NombreCompleto\":\"Sánchez Camila\",\"Total\":144,\"NotasM\":79,\"Porcentaje\":54.86},{\"NombreCompleto\":\"Flores Valentina\",\"Total\":288,\"NotasM\":154,\"Porcentaje\":53.47}]"],
+            "respuestas":["En el curso \"Fundamentos de Programación\", se presenta el desempeño académico de varios profesores: Juan Martínez evaluó un total de 144 estudiantes, con 90 de ellos alcanzando notas satisfactorias, lo que representa un porcentaje del 62.5%. Carlos López evaluó a 45 estudiantes, de los cuales 27 obtuvieron notas satisfactorias, con un porcentaje del 60%. Camila Herrera evaluó a 144 estudiantes, con 85 de ellos logrando notas satisfactorias, alcanzando un porcentaje del 59.03%. Fernanda López evaluó a 144 estudiantes, con 82 obteniendo notas satisfactorias, equivalente al 56.94%. Camila Sánchez evaluó a 144 estudiantes, con 79 logrando notas satisfactorias, lo que representa un porcentaje del 54.86%. Valentina Flores evaluó a 288 estudiantes, con 154 alcanzando notas satisfactorias, con un porcentaje del 53.47%. Estos datos proporcionan una visión del desempeño de cada profesor en el curso \"Fundamentos de Programación\"."]
+        },
+        {
+            "etiqueta": "fp-TipoNota",
+            "patrones": ["[{\"idTipo\":\"EP\",\"cantidad\":2048,\"NotasSatis\":960,\"PorcentajeS\":46.88,\"NotasInSatis\":894,\"PorcentajeI\":43.65},{\"idTipo\":\"PC\",\"cantidad\":3072,\"NotasSatis\":1427,\"PorcentajeS\":46.45,\"NotasInSatis\":1345,\"PorcentajeI\":43.78},{\"idTipo\":\"EF\",\"cantidad\":1024,\"NotasSatis\":501,\"PorcentajeS\":48.93,\"NotasInSatis\":413,\"PorcentajeI\":40.33},{\"idTipo\":\"IF\",\"cantidad\":3072,\"NotasSatis\":1469,\"PorcentajeS\":47.82,\"NotasInSatis\":1291,\"PorcentajeI\":42.02}]"],
+            "respuestas":["En el curso \"Fundamentos de Programación\", se evaluaron varios tipos de exámenes. Las Evaluaciones Parciales (EP) contaron con 2048 exámenes, logrando un 46.88% de éxito con 960 evaluaciones satisfactorias. Las Pruebas Calificadas (PC) totalizaron 3072 exámenes, obteniendo un 46.45% de éxito con 1427 evaluaciones satisfactorias. Los Exámenes Finales (EF) fueron evaluados en 1024 exámenes, alcanzando un 48.93% de éxito con 501 evaluaciones satisfactorias. Las Investigaciones Formativas (IF) fueron evaluadas en 3072 ocasiones, logrando un 47.82% de éxito con 1469 evaluaciones satisfactorias. Estos resultados proporcionan un panorama conciso del rendimiento en diferentes tipos de evaluaciones dentro del curso \"Fundamentos de Programación\"."]
+        },
+        {
+            "etiqueta": "fp-NotasAño",
+            "patrones": ["[{\"year\":2010,\"cantidad\":576,\"Notas\":206,\"Porcentaje\":35.76},{\"year\":2021,\"cantidad\":576,\"Notas\":246,\"Porcentaje\":42.71},{\"year\":2022,\"cantidad\":864,\"Notas\":421,\"Porcentaje\":48.73},{\"year\":2011,\"cantidad\":576,\"Notas\":189,\"Porcentaje\":32.81},{\"year\":2023,\"cantidad\":864,\"Notas\":424,\"Porcentaje\":49.07},{\"year\":2009,\"cantidad\":576,\"Notas\":199,\"Porcentaje\":34.55}]"],
+            "respuestas":["En el curso \"Fundamentos de Programación\", se registraron los siguientes datos de rendimiento académico a lo largo de varios años: En el año 2010, se realizaron 576 evaluaciones, con 206 notas satisfactorias, lo que representa un 35.76% de éxito. En 2021, nuevamente con 576 evaluaciones, se obtuvieron 246 notas satisfactorias, alcanzando un 42.71% de éxito. En 2022, con un total de 864 evaluaciones, se registraron 421 notas satisfactorias, lo que equivale a un 48.73% de éxito. En 2011, se realizaron 576 evaluaciones, obteniendo 189 notas satisfactorias, con un porcentaje del 32.81% de éxito. En 2023, con 864 evaluaciones, se obtuvieron 424 notas satisfactorias, alcanzando un 49.07% de éxito. Finalmente, en 2009, se registraron 576 evaluaciones, con 199 notas satisfactorias, representando un 34.55% de éxito. Estos datos reflejan variaciones en el desempeño académico a lo largo de los años en el curso \"Fundamentos de Programación\"."]
+        },
+        {
+            "etiqueta": "fp-Promedio",
+            "patrones": ["{\"promedio\":16}"],
+            "respuestas":["El promedio general de calificaciones es de 16."]
+        },
+        {
+            "etiqueta": "fp-CompetenciaPro",
+            "patrones": ["{\"cantidadP\":38}"],
+            "respuestas":["En el curso \"Fundamentos de Programación\", hay un total de 38 profesores."]
+        },
+        {
+            "etiqueta": "ii-PromGene",
+            "patrones": ["[{\"Genero\":\"Femenino\",\"promedio\":17,\"porcentaje\":85},{\"Genero\":\"Masculino\",\"promedio\":18,\"porcentaje\":90}]"],
+            "respuestas":["En el curso \"Introducción a la Ingeniería\", se destaca un promedio de calificaciones de 17 para las estudiantes de género femenino, con un alto porcentaje de éxito del 85%. Por otro lado, los estudiantes de género masculino tienen un promedio de 18, con un notable porcentaje de éxito del 90%. Estos resultados muestran un rendimiento académico sólido y equilibrado entre ambos géneros en el curso de \"Introducción a la Ingeniería\"."]
+        },
+        {
+            "etiqueta": "ii-PromTur",
+            "patrones": ["[{\"Turno\":\"Tarde\",\"Promedio\":17},{\"Turno\":\"Noche\",\"Promedio\":18},{\"Turno\":\"Mañana\",\"Promedio\":18}]"],
+            "respuestas":["En el curso \"Introducción a la Ingeniería\", se observa que los estudiantes tienen diferentes promedios de calificaciones según el turno en el que están inscritos. En el turno de Tarde, el promedio es de 17, mientras que en los turnos de Noche y Mañana, los promedios son de 18. Estos resultados sugieren posibles variaciones en el rendimiento académico dependiendo del turno en el que se cursa la asignatura, dentro del marco del curso de \"Introducción a la Ingeniería\"."]
+        },
+        {
+            "etiqueta": "ii-NotasUnidades",
+            "patrones": ["[{\"idUnidad\":\"U3\",\"TotalNotas\":3072,\"NotasM\":1111,\"Porcentaje\":36.17},{\"idUnidad\":\"U2\",\"TotalNotas\":3072,\"NotasM\":1137,\"Porcentaje\":37.01},{\"idUnidad\":\"U1\",\"TotalNotas\":3072,\"NotasM\":1121,\"Porcentaje\":36.49}]"],
+            "respuestas":["En el curso \"Introducción a la Ingeniería\", se evaluaron tres unidades con los siguientes resultados: En la Unidad U3, de un total de 3072 notas, se registraron 1111 notas satisfactorias, alcanzando un porcentaje del 36.17%. En la Unidad U2, también con 3072 notas evaluadas, se obtuvieron 1137 notas satisfactorias, representando un porcentaje del 37.01%. Por último, en la Unidad U1, de las 3072 notas evaluadas, se registraron 1121 notas satisfactorias, equivalente a un porcentaje del 36.49%. Estos datos muestran variaciones en el rendimiento académico entre las unidades del curso de \"Introducción a la Ingeniería\"."]
+        },
+        {
+            "etiqueta": "ii-NotasEstu",
+            "patrones": ["[{\"NombreCompleto\":\"Hernández Santiago\",\"Total\":144,\"NotasM\":66,\"Porcentaje\":45.83},{\"NombreCompleto\":\"Díaz Diego\",\"Total\":504,\"NotasM\":229,\"Porcentaje\":45.44},{\"NombreCompleto\":\"Pérez Andrés\",\"Total\":144,\"NotasM\":64,\"Porcentaje\":44.44},{\"NombreCompleto\":\"Martínez Juan\",\"Total\":45,\"NotasM\":20,\"Porcentaje\":44.44},{\"NombreCompleto\":\"Martínez Ricardo\",\"Total\":288,\"NotasM\":124,\"Porcentaje\":43.06},{\"NombreCompleto\":\"Gómez Valeria\",\"Total\":288,\"NotasM\":124,\"Porcentaje\":43.06}]"],
+            "respuestas":["En el curso \"Introducción a la Ingeniería\", varios profesores han evaluado a los estudiantes con los siguientes resultados: Santiago Hernández evaluó a 144 estudiantes, de los cuales 66 lograron notas satisfactorias, representando un porcentaje del 45.83%. Diego Díaz evaluó a 504 estudiantes, con 229 obteniendo notas satisfactorias, alcanzando un 45.44% de éxito. Andrés Pérez evaluó a 144 estudiantes, de los cuales 64 alcanzaron notas satisfactorias, equivalente al 44.44%. Juan Martínez evaluó a 45 estudiantes, con 20 obteniendo notas satisfactorias, lo que representa un porcentaje del 44.44%. Tanto Ricardo Martínez como Valeria Gómez, ambos evaluando a 288 estudiantes, registraron 124 notas satisfactorias cada uno, con un porcentaje del 43.06% para ambos. Estos resultados destacan el desempeño variado de los profesores en el curso de \"Introducción a la Ingeniería\"."]
+        },
+        {
+            "etiqueta": "ii-TipoNota",
+            "patrones": ["[{\"idTipo\":\"EP\",\"cantidad\":2048,\"NotasSatis\":739,\"PorcentajeS\":36.08,\"NotasInSatis\":1155,\"PorcentajeI\":56.4},{\"idTipo\":\"PC\",\"cantidad\":3072,\"NotasSatis\":1150,\"PorcentajeS\":37.43,\"NotasInSatis\":1675,\"PorcentajeI\":54.52},{\"idTipo\":\"EF\",\"cantidad\":1024,\"NotasSatis\":364,\"PorcentajeS\":35.55,\"NotasInSatis\":572,\"PorcentajeI\":55.86},{\"idTipo\":\"IF\",\"cantidad\":3072,\"NotasSatis\":1116,\"PorcentajeS\":36.33,\"NotasInSatis\":1729,\"PorcentajeI\":56.28}]"],
+            "respuestas":["En el curso \"Introducción a la Ingeniería\", se han evaluado diversos tipos de exámenes con los siguientes resultados: Las Evaluaciones Parciales (EP) contaron con 2048 exámenes, de los cuales 739 fueron satisfactorios, obteniendo un porcentaje de éxito del 36.08%, mientras que 1155 no alcanzaron el nivel satisfactorio con un 56.4%. Las Pruebas Calificadas (PC) se realizaron en 3072 ocasiones, con 1150 exámenes satisfactorios, representando un 37.43% de éxito, pero 1675 no cumplieron con los requisitos satisfactorios con un 54.52%. Los Exámenes Finales (EF) fueron evaluados en 1024 exámenes, de los cuales 364 resultaron satisfactorios con un 35.55% de éxito, y 572 no satisfactorios con un 55.86%. En cuanto a las Investigaciones Formativas (IF), se evaluaron 3072 veces, logrando 1116 evaluaciones satisfactorias con un 36.33% de éxito, mientras que 1729 no lograron el nivel satisfactorio con un 56.28%. Estos datos ofrecen una perspectiva exhaustiva del rendimiento académico en distintas modalidades evaluativas dentro del curso de \"Introducción a la Ingeniería\"."]
+        },
+        {
+            "etiqueta": "ii-NotasAño",
+            "patrones": ["[{\"year\":2010,\"cantidad\":576,\"Notas\":425,\"Porcentaje\":73.78},{\"year\":2021,\"cantidad\":576,\"Notas\":290,\"Porcentaje\":50.35},{\"year\":2022,\"cantidad\":864,\"Notas\":441,\"Porcentaje\":51.04},{\"year\":2011,\"cantidad\":576,\"Notas\":407,\"Porcentaje\":70.66},{\"year\":2023,\"cantidad\":864,\"Notas\":435,\"Porcentaje\":50.35},{\"year\":2009,\"cantidad\":576,\"Notas\":407,\"Porcentaje\":70.66}]"],
+            "respuestas":["En el curso \"Introducción a la Ingeniería\", se ha observado variabilidad en el rendimiento académico a lo largo de los años. En el año 2010, de 576 estudiantes evaluados, 425 lograron notas satisfactorias, alcanzando un alto porcentaje del 73.78%. Sin embargo, en el año 2021, la tasa de éxito disminuyó significativamente con solo 290 estudiantes obteniendo notas satisfactorias, representando un 50.35%. En el año 2022, con una mayor cantidad de estudiantes evaluados (864), se registró un porcentaje de éxito del 51.04% con 441 notas satisfactorias. En contraste, tanto en 2011 como en 2009, se observaron tasas de éxito similares con un 70.66%, evaluando 576 estudiantes en cada año y obteniendo 407 notas satisfactorias respectivamente. Finalmente, en 2023, de nuevo con 864 estudiantes evaluados, se registró un porcentaje del 50.35% con 435 notas satisfactorias. Estos datos reflejan fluctuaciones en el rendimiento académico a lo largo de los años dentro del curso de \"Introducción a la Ingeniería\"."]
+        },
+        {
+            "etiqueta": "ii-Promedio",
+            "patrones": ["{\"promedio\":18}"],
+            "respuestas":["En el curso \"Introducción a la Ingeniería\", el promedio general de calificaciones es de 16."]
+        },
+        {
+            "etiqueta": "ii-CantidadEstu",
+            "patrones": ["{\"cantidadM\":1024}"],
+            "respuestas":["Se matricularon un total de 1024 estudiantes."]
+        },
+        {
+            "etiqueta": "ii-CompetenciaPro",
+            "patrones": ["{\"cantidadP\":34}"],
+            "respuestas":["En el curso \"Introducción a la Ingeniería\", hay un total de 34 profesores."]
+        },
+        {
+            "etiqueta": "m-PromGene",
+            "patrones": ["[{\"Genero\":\"Femenino\",\"promedio\":16,\"porcentaje\":80},{\"Genero\":\"Masculino\",\"promedio\":16,\"porcentaje\":80}]"],
+            "respuestas":["En el curso ,tanto entre estudiantes de género femenino como masculino, se observa un promedio de calificación de 16. Este promedio refleja un alto desempeño académico con un porcentaje del 80% en ambos grupos, indicando que la mayoría de los estudiantes han alcanzado un nivel satisfactorio en el curso. Esta consistencia en el rendimiento sugiere una buena comprensión y aplicación de los conceptos enseñados en Matemática I por parte de ambos géneros."]
+        },
+        {
+            "etiqueta": "m-PromTur",
+            "patrones": ["[{\"Turno\":\"Tarde\",\"Promedio\":16},{\"Turno\":\"Noche\",\"Promedio\":16},{\"Turno\":\"Mañana\",\"Promedio\":16}]"],
+            "respuestas":["En el curso de Matemática I, se han evaluado los diferentes turnos con un promedio de calificación de 16. Tanto en el turno de Tarde, Noche y Mañana, los estudiantes han mantenido un nivel consistente de rendimiento académico. Esto sugiere que los horarios de clase no parecen influir significativamente en el desempeño promedio de los estudiantes en el curso."]
+        },
+        {
+            "etiqueta": "m-NotasUnidades",
+            "patrones": ["[{\"idUnidad\":\"U3\",\"TotalNotas\":3072,\"NotasM\":1341,\"Porcentaje\":43.65},{\"idUnidad\":\"U2\",\"TotalNotas\":3072,\"NotasM\":1363,\"Porcentaje\":44.37},{\"idUnidad\":\"U1\",\"TotalNotas\":3072,\"NotasM\":1293,\"Porcentaje\":42.09}]"],
+            "respuestas":["En el curso de Matemática I, se ha evaluado el desempeño de los estudiantes en tres unidades distintas. En la Unidad 3 (U3), se registraron un total de 3072 notas, de las cuales 1341 fueron obtenidas por estudiantes masculinos, representando un porcentaje del 43.65%. En la Unidad 2 (U2), también con 3072 notas evaluadas, se obtuvieron 1363 notas masculinas, lo que equivale al 44.37% del total. Por último, en la Unidad 1 (U1), de las 3072 notas evaluadas, los estudiantes masculinos obtuvieron 1293 notas, correspondientes al 42.09% del total de notas evaluadas. Estos datos proporcionan un panorama detallado del rendimiento de los estudiantes masculinos en las diferentes unidades del curso de Matemática I."]
+        },
+        {
+            "etiqueta": "m-NotasEstu",
+            "patrones": ["[{\"NombreCompleto\":\"Herrera Camila\",\"Total\":144,\"NotasM\":80,\"Porcentaje\":55.56},{\"NombreCompleto\":\"Perez Juan\",\"Total\":144,\"NotasM\":75,\"Porcentaje\":52.08},{\"NombreCompleto\":\"García Fernando\",\"Total\":360,\"NotasM\":186,\"Porcentaje\":51.67},{\"NombreCompleto\":\"Sánchez Javier\",\"Total\":216,\"NotasM\":110,\"Porcentaje\":50.93},{\"NombreCompleto\":\"Vargas Lucía\",\"Total\":432,\"NotasM\":220,\"Porcentaje\":50.93},{\"NombreCompleto\":\"Garcia Carlos\",\"Total\":144,\"NotasM\":73,\"Porcentaje\":50.69}]"],
+            "respuestas":["En el curso de Matemática I, se ha evaluado el desempeño de varios estudiantes. Camila Herrera obtuvo un total de 144 puntos, con 80 notas masculinas, lo que equivale al 55.56%. Juan Pérez alcanzó 75 notas masculinas de un total de 144, con un porcentaje del 52.08%. Fernando García logró 186 notas masculinas de un total de 360, representando el 51.67%. Javier Sánchez y Lucía Vargas obtuvieron el mismo porcentaje de notas masculinas, con un 50.93%, aunque en diferentes cantidades: 110 notas de 216 y 220 de 432, respectivamente. Carlos García obtuvo 73 notas masculinas de un total de 144, lo que representa un porcentaje del 50.69%. Estos resultados ofrecen una visión detallada del rendimiento de estos estudiantes en el curso de Matemática I"]
+        },
+        {
+            "etiqueta": "m-TipoNota",
+            "patrones": ["[{\"idTipo\":\"EP\",\"cantidad\":2048,\"NotasSatis\":914,\"PorcentajeS\":44.63,\"NotasInSatis\":970,\"PorcentajeI\":47.36},{\"idTipo\":\"PC\",\"cantidad\":3072,\"NotasSatis\":1328,\"PorcentajeS\":43.23,\"NotasInSatis\":1464,\"PorcentajeI\":47.66},{\"idTipo\":\"EF\",\"cantidad\":1024,\"NotasSatis\":436,\"PorcentajeS\":42.58,\"NotasInSatis\":484,\"PorcentajeI\":47.27},{\"idTipo\":\"IF\",\"cantidad\":3072,\"NotasSatis\":1319,\"PorcentajeS\":42.94,\"NotasInSatis\":1448,\"PorcentajeI\":47.14}]"],
+            "respuestas":["En el curso de Matemática I, se han evaluado diferentes tipos de evaluaciones con los siguientes resultados: en las Evaluaciones Parciales (EP), de un total de 2048 evaluaciones, 914 estudiantes lograron notas satisfactorias, representando el 44.63%, mientras que 970 obtuvieron notas insatisfactorias, con un 47.36%. En las Prácticas Calificadas (PC), de 3072 evaluaciones, 1328 estudiantes alcanzaron notas satisfactorias, lo que equivale al 43.23%, mientras que 1464 estudiantes obtuvieron notas insatisfactorias, representando el 47.66%. En los Exámenes Finales (EF), de 1024 evaluaciones, 436 estudiantes lograron notas satisfactorias, con un 42.58%, mientras que 484 estudiantes obtuvieron notas insatisfactorias, con un 47.27%. En la Investigación Formativa (IF), de 3072 evaluaciones, 1319 estudiantes obtuvieron notas satisfactorias, lo que representa el 42.94%, mientras que 1448 estudiantes obtuvieron notas insatisfactorias, representando el 47.14%. Estos resultados reflejan la distribución del desempeño de los estudiantes en diferentes tipos de evaluaciones dentro del curso de Matemática I."]
+        },
+        {
+            "etiqueta": "m-NotasAño",
+            "patrones": ["[{\"year\":2010,\"cantidad\":576,\"Notas\":324,\"Porcentaje\":56.25},{\"year\":2021,\"cantidad\":576,\"Notas\":261,\"Porcentaje\":45.31},{\"year\":2022,\"cantidad\":864,\"Notas\":409,\"Porcentaje\":47.34},{\"year\":2011,\"cantidad\":576,\"Notas\":306,\"Porcentaje\":53.13},{\"year\":2023,\"cantidad\":864,\"Notas\":413,\"Porcentaje\":47.8},{\"year\":2009,\"cantidad\":576,\"Notas\":333,\"Porcentaje\":57.81}]"],
+            "respuestas":["En el curso de Matemática I, se han analizado los resultados académicos a lo largo de varios años. En 2010, de 576 estudiantes evaluados, 324 obtuvieron notas satisfactorias, lo que representa el 56.25%. En 2021, con la misma cantidad de estudiantes, 261 lograron notas satisfactorias, equivalente al 45.31%. En 2022, con 864 estudiantes evaluados, 409 alcanzaron notas satisfactorias, representando el 47.34%. En 2011, nuevamente con 576 estudiantes, 306 lograron notas satisfactorias, equivalente al 53.13%. En 2023, con 864 estudiantes evaluados, 413 obtuvieron notas satisfactorias, representando el 47.8%. Finalmente, en 2009, de 576 estudiantes evaluados, 333 lograron notas satisfactorias, con un 57.81%. Estos datos proporcionan una visión detallada del rendimiento académico en el curso de Matemática I a lo largo de varios años."]
+        },
+        {
+            "etiqueta": "m-Promedio",
+            "patrones": ["{\"promedio\":16}"],
+            "respuestas":["El promedio general de calificaciones es de 16."]
+        },
+        {
+            "etiqueta": "m-CompetenciaPro",
+            "patrones": ["{\"cantidadP\":40}"],
+            "respuestas":["En el curso \"Matematica I\", hay un total de 38 profesores."]
+        }
+        
+        ]
+    }
+    
